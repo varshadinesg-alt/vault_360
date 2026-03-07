@@ -1,32 +1,31 @@
 # 🛡️ Vault 360 - Smart Inventory & Sales Analytics
 
-A full-stack Inventory Management System built to provide real-time business telemetry and automated sales reporting.
+Vault 360 is a full-stack inventory management system designed for real-time tracking, secure data handling, and professional sales reporting. This project features a robust React frontend and a Firebase-powered backend, optimized for both performance and security.
 
+## 🚀 Key Features
 
-
-## 🚀 Live Demo
-**https://vault-360.vercel.app/**
-
-## 🌟 Key Features
-* **Real-time Analytics**: Visual revenue tracking using Recharts to monitor growth trends.
-* **Smart Inventory**: Automated "Low Stock" flagging and inventory reconciliation.
-* **Secure Authentication**: Protected Admin Dashboard using Firebase Auth.
-* **Automated Reporting**: Instant PDF invoice generation for every transaction.
+* **Real-time Dashboard**: Visualizes total revenue and asset valuation directly from Firestore.
+* **Sales Telemetry**: Interactive charts showing revenue trends for the most recent transactions.
+* **Inventory Control**: Full CRUD functionality to manage products, including stock alerts.
+* **Automated Invoicing**: Generates professional PDF receipts for customers using `jsPDF`.
+* **Live Deployment**: Hosted and continuously deployed via Vercel.
 
 ## 🛠️ Tech Stack
-* **Frontend**: React.js, Tailwind CSS, Recharts
-* **Backend**: Firebase (Firestore & Authentication)
-* **Deployment**: Vercel CI/CD
-* **Version Control**: Git/GitHub
 
-## 🛡️ Security & Best Practices
-During development, I implemented industry-standard security measures:
-* Used **Environment Variables** (`.env`) to protect sensitive Firebase API keys.
-* Configured `.gitignore` to prevent private service accounts from being exposed.
-* Whitelisted production domains in Firebase to prevent unauthorized access.
+* **Frontend**: React.js, Tailwind CSS
+* **Backend**: Node.js, Express
+* **Database**: Google Firebase (Firestore)
+* **Security**: Dotenv, Git Ignore Policies
 
-## ⚙️ Setup
-1. Clone the repo: `git clone https://github.com/varshadinesg-alt/vault-360.git`
-2. Install dependencies: `npm install`
-3. Create a `.env` file with your Firebase credentials.
-4. Start the app: `npm start`
+## 🔐 Security & Optimization
+
+During development, I implemented several industry-standard security practices:
+
+* **Credential Masking**: Configured `.gitignore` to prevent sensitive files like `serviceAccountKey.json` and `.env` from being exposed on GitHub.
+* **Environment Variables**: Centralized backend configuration to keep API keys separate from source code.
+
+## 📦 Getting Started
+
+1. **Clone the Repo**: `git clone https://github.com/varshadinesg-alt/vault_360.git`
+2. **Install Deps**: Run `npm install` in both `/Backend` and `/frontend`.
+3. **Setup Environment**: Create a `.env` in the backend folder with your Firebase credentials.
