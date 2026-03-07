@@ -3,7 +3,6 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  // Use your real values here as seen in your VS Code
   apiKey: "AIzaSyD1op3MWeo-ja565R_7W2yg6wSrYGTlCm8", 
   authDomain:"e-commerce-project-c18d4.firebaseapp.com",
   projectId: "e-commerce-project-c18d4",
@@ -15,7 +14,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 
-// Export Authentication tools for your Login button
+// Export Authentication tools for Login button
 export const auth = getAuth(app);
 export const provider = new GoogleAuthProvider();
 export const db = getFirestore(app);
